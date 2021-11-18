@@ -1,5 +1,4 @@
 ver: 1
-model_id: test_mmf
 description: Демонстрация работы MMF
 name: Тестовая mmf-совместимая модель
 methods:
