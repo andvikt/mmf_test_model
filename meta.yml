@@ -1,0 +1,19 @@
+ver: 1
+methods:
+  main.score:
+    fields:
+      - type: pandas
+        name: df
+        columns:
+          id: int32
+          mt_content_sha256: str
+          mt_content: str
+          inserted_dttm: datetime
+          last_modify_dttm: datetime
+    returns:
+      - type: pandas
+        name: predict
+        main: true
+      - type: pandas
+        is_metrics: true
+        name: metrics
