@@ -3,7 +3,7 @@ description: Демонстрация работы MMF
 name: Тестовая mmf-совместимая модель
 methods:
   main.score:
-    fields:
+    targets:
       - type: pandas
         name: df
         columns:
