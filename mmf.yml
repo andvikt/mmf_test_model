@@ -19,5 +19,5 @@ targets:
       taskType: UpdateArtifacts
       artifacts:
         - model
-  artifacts:
-    - model
+artifacts:
+  - model
