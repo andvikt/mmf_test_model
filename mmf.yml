@@ -2,7 +2,7 @@ ver: 1
 description: Демонстрация работы MMF
 name: Тестовая mmf-совместимая модель
 targets:
-  main.score:
+  - path: main.score
     name: Скоринг
     taskType: FileToFile
     description: Описание функции score
@@ -11,7 +11,7 @@ targets:
         - xlsx
         - xls
         - csv
-  main.train:
+  - path: main.train
     name: Автообучение
     taskType: FileToTask
     description: Описание алгоритма автообучения
@@ -20,5 +20,5 @@ targets:
       artifacts:
         - model
 artifacts:
-  model:
-    name: Модель
+  - name: Модель
+    path: model
