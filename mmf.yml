@@ -18,7 +18,7 @@ targets:
     taskOptions:
       taskType: UpdateArtifacts
       artifacts:
-        model:
-          name: Модель
+        - model
 artifacts:
-  - model
+  model:
+    name: Модель
