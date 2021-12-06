@@ -22,3 +22,4 @@ targets:
 artifacts:
   - name: Модель
     path: model
+    description: Веса модели
