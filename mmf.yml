@@ -5,7 +5,7 @@ targets:
   - path: main.score
     name: Скоринг
     taskType: FileToFile
-    description: Описание функции score
+    description: Описание функции score - лучшее, что вы видели
     options:
       inputFileTypes:
         - .xlsx
