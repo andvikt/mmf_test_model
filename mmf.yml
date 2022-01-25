@@ -11,6 +11,8 @@ targets:
         - .xlsx
         - .xls
         - .csv
+    artifacts:
+      - model
   - path: main.train
     name: Автообучение
     taskType: FileToTask

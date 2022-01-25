@@ -1,6 +1,34 @@
-import pandas as pd
+import pickle
+import time
+import pandas
+import mmf_meta as mmf
 
 
-def score(pin: str, pout: str):
-    pd.read_excel(pin)
-    pd.write_csv(pout)
+@mmf.target(
+    description="Супер-функция",
+    returns=mmf.DataFrame(out_format=mmf.DataFrameFormat.CSV),
+)
+def score(
+    df: pandas.DataFrame = mmf.DataFrame(description="Описание df"),
+    # other: dict = mmf.JsonFile(description="Описание other"),
+):
+    return df
+
+
+@mmf.target(
+    description="Другая супер-функция",
+    returns=mmf.String(),
+)
+def other(
+    inp=mmf.String(description="важный параметр"),
+    another=mmf.Integer(description="еще один важный параметр"),
+):
+    time.sleep(30)
+    return inp
+
+
+@mmf.artifact("other")
+def model():
+    with open("other", "br") as f:
+        return pickle.load(f)
+
