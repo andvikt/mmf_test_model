@@ -22,12 +22,9 @@ def score(
 def other(
     inp=mmf.String(description="важный параметр"),
     another=mmf.Integer(description="еще один важный параметр"),
-    another2=mmf.Integer(description="adafaf"),
 ):
     time.sleep(30)
     return inp
-
-
 
 
 @mmf.artifact("other")
