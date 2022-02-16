@@ -27,6 +27,18 @@ def other(
     return inp
 
 
+@mmf.target(
+    description="Еще одна лучшая функция",
+    returns=mmf.String(),
+)
+def hello(
+    inp=mmf.String(description="важный параметр"),
+    another=mmf.Integer(description="еще один важный параметр"),
+):
+    time.sleep(5)
+    return inp
+
+
 @mmf.artifact("other")
 def model():
     with open("other", "br") as f:
